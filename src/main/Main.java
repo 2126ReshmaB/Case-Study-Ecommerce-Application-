@@ -15,7 +15,7 @@ public class Main {
 			System.out.println("------------- Welcome to Ecommerce Application -------------");
 			System.out.println("==============================================================");
 			System.out.println(
-					" 1. Register Customer \n 2. Create Product \n 3. Delete Product \n 4. Add to Cart \n 5. View Cart \n 6. Place Order \n 7. View Custoemr Orders \n 8. Exit");
+					" 1. Register Customer \n 2. Create Product \n 3. Delete Product \n 4. Add to Cart \n 5. View Cart \n 6. Remove from Cart \n 7. Place Order \n 8. View Custoemr Orders \n 9. Exit");
 			System.out.println("==================");
 			System.out.print("Enter you choice : ");
 			int ch = sc.nextInt();
@@ -173,6 +173,12 @@ public class Main {
 					}
 				}
 				break;
+			case 9:
+                System.out.println("Exiting the application...");
+                sc.close();
+                return;
+            default:
+                System.out.println("Invalid option. Please try again.");
 
 			}
 		}
