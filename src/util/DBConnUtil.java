@@ -27,8 +27,10 @@ public class DBConnUtil {
 
             Class.forName(driver);
             connection = DriverManager.getConnection(url, username, password);
+            System.out.println("Successfull!!!");
 		}
 		catch(ClassNotFoundException | SQLException e) {
+			System.out.println("Nope!!!");
 			e.printStackTrace();
 		}
 		return connection;
